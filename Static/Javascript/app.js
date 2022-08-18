@@ -37,7 +37,7 @@ function updateFilters() {
     console.log(changedProperty)
 
     // 4c. Save the id of the filter that was changed as a variable.
-    let filterId = changedTag.attribute("id");
+    let filterId = changedTag.attr("id");
     console.log(filterId)
   
     // 5. If a filter value was entered then add that filterId and value
@@ -69,7 +69,7 @@ function updateFilters() {
   }
   
   // 2. Attach an event to listen for changes to each filter
-  d3.selectAll("#filter-btn").on("click", updateFilters);
+  d3.selectAll("input").on("change", updateFilters);
   
   // Build the table when the page loads
   buildTable(tableData);
