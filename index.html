@@ -13,14 +13,14 @@
 />
 <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class="bg-dark">
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
     </div>
     <div class="jumbotron">
-        <h1>The Truth Is Out There</h1>
+        <h1 class="display-4">The Truth Is Out There</h1>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -44,16 +44,34 @@
                 <p>Filter Search</p>
               </form>
           <ul class="list-group">
-                <li class="list-group-item">
+                
+                <label for="date">Enter Date</label>
+                <input type="text" placeholder="1/10/2010" id="datetime" /> 
+                
+                
+                
+                <label for="City">Enter City</label>
+                <input type="text" placeholder="rosewell" id="city" /> 
+               
 
-                </li>
+                
+                <label for="State">Enter State</label>
+                <input type="text" placeholder="ca" id="state" /> 
+                
+                
+                <label for="Country">Enter Country</label>
+                <input type="text" placeholder="usa" id="country" />
+
+                <label for="Shape">Enter Shape</label>
+                <input type="text" placeholder="circle" id="shape" />
+
+               
+
                 <li class="list-group-item">
                 
                 </li>
             </ul>
-            <label for="date">Enter Date</label>
-            <input type="text" placeholder="1/10/2010" id="datetime" /> 
-            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>  </div>
+            
             <div class="col-md-9">
             <table class="table table-striped">
               <thead>
@@ -72,5 +90,8 @@
             </div>
         </div>
       </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/Javascript/data.js"></script>
+  <script src="static/Javascript/app.js"></script>
 </body>
 </html>
